@@ -1,0 +1,15 @@
+h1 {
+    font-size: 20px;
+}
+
+.fundoVermelho{
+    background-color: red;
+}
+#textoPrincipal {
+    font-size: 40px;
+    font-weight: bold;
+    color: blueviolet;
+    padding: 10px;
+    background-color: green;
+    border-radius: 20px;
+}
