@@ -25,7 +25,7 @@ p{
     margin: 0 auto;
     padding: 0 5%;
 }
-.btn{
+.btn, .animated-btn{
     background-color: #4f9cf9;
     color: white;
     padding: 15px 20px;
@@ -34,8 +34,19 @@ p{
     display: inline-block;
     transition: 0.1s;
 }
+.animated-btn{
+    animation: animate-outline 1s ease-out infinite;
+}
 .btn:hover{
     background-color: #3580db;
+}
+@keyframes animate-outline {
+    from{
+        outline:  0px solid #4f9bf98a;
+    }
+    to{
+        outline:  15px solid #4f9bf900;
+    }
 }
 header{
     background-position: center;
@@ -43,6 +54,9 @@ header{
     background-attachment: fixed; /* É o que faz o efeito de movimento da imagem do container */
 
 }
+
+
+/* FAZENDO OS BOTÕES */
 nav{
     display: flex; /* deixa as paradas um do lado do outro */
     align-items: center; /*alinha os itens no meio do nav*/
@@ -60,14 +74,23 @@ nav ul a{ /*Modifica a lista */
     text-transform: uppercase;
     font-size: 14px;
     display: block;
+    
 }
-nav ul a::after{
+nav ul a:not(.btn)::after{
     content: "";
-    background-color: red;
+    background-color: #4f9cf9;
     height: 3px;
-    width: 100%;
+    width: 0%;
     display: block;
+    margin: 0 auto;
+    transition: 0.2s;
 }
+nav ul a:hover::after{
+    width: 100%;
+}
+/* FINALIZANDO OS BOTÕES */
+
+
 .banner{
     display: flex;
     justify-content: center;
@@ -87,3 +110,4 @@ nav ul a::after{
     font-weight: lighter;
     margin: 18px 0px;
 }
+
