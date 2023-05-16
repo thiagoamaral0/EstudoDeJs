@@ -111,3 +111,118 @@ nav ul a:hover::after{
     margin: 18px 0px;
 }
 
+/* FACA MAIS */
+
+.faca-mais .container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.faca-mais .faca-mais-text{
+    width: 50%;
+    padding: 0 40px;
+}
+.faca-mais .faca-mais-text h3{
+    font-size: 50px;
+}
+.faca-mais .faca-mais-text p{
+    margin: 10px 0 15px 0;
+}
+faca-mais .faca-mais-img{
+    width: 50%;
+}
+
+.faca-mais .faca-mais-img img{
+    width: 100%;
+}
+
+/* DEPOIMENTOS */
+.depoimentos h3{
+    text-align: center;
+}
+.depoimentos p{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+}
+
+.depoimentos .card-item{
+    background-color: #d3e6fd;
+    margin: 15px;
+    border-radius: 14px;
+    text-align: center;
+    width: 350px;
+    transition: 0.3s;
+}
+
+.depoimentos .card-item img{
+    border-radius: 100%;
+    width: 80px;
+    display: block;
+    margin: 10px auto;
+}
+
+.depoimentos .card-item .name-user{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.depoimentos .card-item .depoimento-user{
+    font-size: 15px;
+    padding: 0 15px;
+    transition: 0.3s;
+}
+.depoimentos .card-item .estrelas{
+    margin: 15px;
+    border-top: 2px solid #71767a23;
+}
+.depoimentos .card-item .estrelas i{
+    color: #4f9cf9;
+    margin-top: 15px;
+    font-size: 20px;   
+    transition: 0.3s;
+}
+.depoimentos .card-item:hover{
+    background-color: #4f9cf9;
+    margin-top: -5px;
+}
+.depoimentos .card-item:hover .name-user, 
+.depoimentos .card-item:hover .depoimento-user,
+.depoimentos .card-item:hover .estrelas i{
+    color: whitesmoke;
+}
+/* FIM DE DEPOIMENTOS */
+/* CLIENTES */
+.clientes h3, p{
+    text-align: center;
+}
+.clientes .container div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* FIM CLIENTES */
+/* INICIO FOOTER */
+.footer{
+    background-color: #4f9cf9;
+    text-align: center;
+}
+.footer i{
+    color: #4f9cf9;
+    font-size: 19px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.footer p{
+    margin-top: 10px;
+    color: white;
+}
+/* FIM DO FOOTER */
