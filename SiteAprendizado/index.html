@@ -18,12 +18,18 @@
                 <a href="index.html">
                     <img src="img/logo.png" alt="Logo">
                 </a>
-                <ul>
+                <ul class="ul">
                     <a href="index.html">Home</a>
                     <a href="sobre.html">Sobre</a>
                     <a href="servicos.html">Serviços</a>
                     <a class="btn" href="contato.html">Contato</a>
+                    <div class="close-icon" onclick="CloseMenu()">
+                        <i class="fa-regular fa-circle-xmark"></i>
+                    </div>
                 </ul>
+                <div class="menu-icon" onclick="OpenMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </nav>
             <section class="banner">
                 <div class="banner-text">
@@ -148,15 +154,16 @@
     <footer class="footer">
         <div class="container">
             <div class="links">
-                <a href="#"> <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href="#"> <i class="fa fa-github" aria-hidden="true"></i></a>
-                <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-linkedin"></i>
             </div>
             <p>Desenvolvido por Thiago Augusto</p>
         </div>
         
     </footer>
     <!-- FIM DE FOOTER -->
+    <script src="js/script.js"></script>
 </body>
 </html>
