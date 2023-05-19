@@ -243,7 +243,65 @@ faca-mais .faca-mais-img{
     color: white;
 }
 /* FIM DO FOOTER */
+/* PÁGINA SOBRE*/
+.sobre .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sobre .sobre-text{
+    width: 50%;
+    padding-right: 40px;
 
+}
+
+.sobre .sobre-text p{
+    margin: 18px 0;
+    color: #000000a6;
+
+}
+.sobre .sobre-img{
+    width: 50%;
+}
+.sobre .sobre-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+/* FIM PÁGINA SOBRE */
+/* PÁGINA SERVIÇOS */
+.servicos h3{
+    text-align: center;
+}
+.servicos .container > p{
+    text-align: center;
+}
+.servicos .row-cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.servicos .row-card-item{
+    background-color: #d3e6fd;
+    width: 350px;
+    padding: 20px;
+    border-radius: 14px;
+    margin: 20px;
+    transition: 0.3s;
+}
+.servicos .row-card-item:hover{
+    background-color: #4f9cf9;
+}
+.servicos .row-card-item:hover p{
+    color: whitesmoke;
+}
+.servicos .row-card-item img{
+    background-color: #4f9cf9;
+    border-radius: 15px;
+    width: 70px;
+    padding: 9px;
+}
+/* FIM PÁGINA SERVIÇOS */
 /* RESPONSIVIDADE */
 @media(max-width: 830px){
     nav .menu-icon{
