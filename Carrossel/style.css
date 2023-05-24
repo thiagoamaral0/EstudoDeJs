@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.container{
+    display: flex;
+    background-color: black;
+}
+.container ul{
+    display: flex;
+    padding-left: 145%;
+}
+nav{
+    display: flex; /* deixa as paradas um do lado do outro */
+    align-items: center; /*alinha os itens no meio do nav*/
+    justify-content:  space-between;
+    padding-top: 30px;
+    
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+nav ul a{ /*Modifica a lista */
+    color: white;
+    margin: 0px 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+    
+}
+
+/* CARROSSEL */
+section.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 in !important;
+    overflow: hidden;
+
+}
+
+.slider-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slider-content input, .img-mobile{
+    display: none;
+}
+
+.slide-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.slide-box img{
+    width: 100%;
+}
+
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn, .nav-auto div{
+    border: 1px solid purple;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 10px;
+}
+.nav-manual .manual-btn:hover{
+    background-color: purple;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1{
+    background-color: purple;
+}
+#radio2:checked ~ .nav-auto .auto-btn2{
+    background-color: purple;
+}
+#radio3:checked ~ .nav-auto .auto-btn3{
+    background-color: purple;
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
